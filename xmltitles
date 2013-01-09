@@ -1,197 +1,329 @@
 4520a769.xml
 	Offline Writer Identification using K-Adjacent Segments 
-	2012
-	Rajiv Jain and David Doermann 
-	
+	2011
+	Authors:
+		Rajiv Jain 
+		David Doermann 
+		
+	Datasets:
+		iam
+		madcat
+		
 4520a463.xml
 	Comparing Approaches to Mathematical Document Analysis from PDF
-	2012
-	Josef B. Baker, Alan P. Sexton, and Volker Sorge
-	Masakazu Suzuki
-	
+	2011
+	Authors:
+		Josef B. Baker 
+		Alan P. Sexton 
+		Volker Sorge 
+		Masakazu Suzuki 
+		
+	Datasets:
+		
 4520a643.xml
 	A Multi-scale Text Line Segmentation Method in Freestyle Handwritten Documents 
-	2012
-	Yangdong Gao, Xiaoqing Ding, Changsong Liu 
-	
+	2011
+	Authors:
+		Yangdong Gao 
+		Xiaoqing Ding 
+		Changsong Liu 
+		
+	Datasets:
+		hit-mw
+		
 4520b200.xml
 	Document Image Indexing using Edit Distance based Hashing
-	2012
-	Ehtesham Hassan, Santanu Chaudhury, M Gopal
-	
+	2011
+	Authors:
+		Ehtesham Hassan 
+		Santanu Chaudhury 
+		Gopal 
+		
+	Datasets:
+		devanagari word dataset
+		bengali word dataset
+		
 p133-de12.xml
 	Scientific Table Type Classification in Digital Library 
 	2012
-	Seongchan Kim, Keejun Han  
-	Soon Young Kim  
-	Ying Liu  
-	
+	Authors:
+		Seongchan Kim 
+		Keejun Han 
+		Soon Young Kim 
+		Ying Liu 
+		
+	Datasets:
+		
 p37-mandal-doceng12.xml
 	Challenges in Generating Bookmarks from TOC Entries  in e-Books 
 	2012
-	Chandrashekar Ramanathan 
-	         Yogalakshmi Jayabal 
-	Mehul Sheth 
-	mehulkumarjayprakash.sheth
-	
+	Authors:
+		Chandrashekar Ramanathan 
+		Yogalakshmi Jayabal 
+		Mehul Sheth 
+		
+	Datasets:
+		
 4520a109.xml
 	Segmentation of Handwritten Textlines in Presence of Touching Components
-	2012
-	Jayant Kumar
-	Le Kang
-	David Doermann
-	Wael Abd-Almageed
-	
+	2011
+	Authors:
+		Jayant Kumar 
+		Le Kang 
+		David Doermann 
+		Wael Abd-Almageed 
+		
+	Datasets:
+		icdar
+		
 06195390.xml
 	Automatic Room Detection and Room Labeling from Architectural Floor Plans
 	2012
-	Sheraz Ahmed
-	, Marcus Liwicki
-	, Markus Weber
-	, Andreas Dengel
-	
+	Authors:
+		Sheraz Ahmed 
+		Marcus Liwicki 
+		Markus Weber 
+		Andreas Dengel 
+		
+	Datasets:
+		
 4520a119.xml
 	Large Scale Page-Based Book Similarity Clustering
-	2012
-	Nemanja Spasojevi´c
-	Guillaume Poncin
-	
+	2011
+	Authors:
+		Nemanja Spasojevi´c 
+		Guillaume Poncin 
+		
+	Datasets:
+		
 05693538.xml
 	a.SCAtch - A Sketch-Based Retrieval for Architectural Floor Plans
-	2012
-	Markus Weber
-	, Marcus Liwicki
-	, Andreas Dengel
-	
+	2010
+	Authors:
+		Markus Weber 
+		Marcus Liwicki 
+		Andreas Dengel 
+		
+	Datasets:
+		
 p117-de12.xml
 	Structural and Visual Comparisons for Web Page Archiving
 	2012
-	Marc Teva Law
-	Nicolas Thome
-	Stéphane Gançarski
-	Matthieu Cord
-	
+	Authors:
+		Marc Teva Law 
+		Nicolas Thome 
+		Stéphane Gançarski 
+		Matthieu Cord 
+		
+	Datasets:
+		
 p3285-tashman-pres.xml
 	LiquidText: A Flexible, Multitouch Environment to Support Active Reading 
-	2012
-	Craig S. Tashman 
-	W. Keith Edwards 
-	
+	2011
+	Authors:
+		Craig S. Tashman 
+		W. Keith Edwards 
+		
+	Datasets:
+		
 4520a613.xml
 	Segmentation and Normalisation in GraphemeCodebooks
-	2012
-	Tara Gilliam, Richard C. Wilson, John A. Clark
-	
+	2011
+	Authors:
+		Tara Gilliam 
+		Richard C. Wilson 
+		John A. Clark 
+		
+	Datasets:
+		iam
+		
 4520a414.xml
 	Document Recognition Without Strong Models
-	2012
-	Henry S. Baird
-	U S A
-	
+	2011
+	Authors:
+		Henry S. Baird 
+		
+	Datasets:
+		
 Scene-0462.xml
 	End-to-End Text Recognition with Convolutional Neural Networks
 	2012
-	Tao Wang
-	David J. Wu
-	Adam Coates
-	Andrew Y. Ng
-	
+	Authors:
+		Tao Wang 
+		David J. Wu 
+		Adam Coates 
+		Andrew Y. Ng 
+		
+	Datasets:
+		icdar
+		street view text
+		
 p93-de11-stoppe.xml
 	Skeleton Comparisons
-	2012
-	Jannis Stoppe
-	Björn Gottfried
-	
+	2011
+	Authors:
+		Jannis Stoppe 
+		Björn Gottfried 
+		
+	Datasets:
+		
 shilman_discerning_icdar03-pres.xml
 	Discerning Structure from Freeform Handwritten Notes 
 	2012
-	Michael Shilman
-	, Zile Wei
-	, Sashi Raghupathy, Patrice Simard, David Jones 
-	                                                 
-	
+	Authors:
+		Michael Shilman 
+		Zile Wei 
+		Sashi Raghupathy 
+		Patrice Simard 
+		David Jones 
+		
+	Datasets:
+		
 4520a779.xml
 	A Table Detection Method for Multipage PDF Documents via Visual Seperators and Tabular Structures 
-	2012
-	Jing Fang, Liangcai Gao
-	Kun Bai 
-	Ruiheng Qiu 
-	Xin Tao, Zhi Tang 
-	
+	2011
+	Authors:
+		Jing Fang 
+		Liangcai Gao 
+		Kun Bai 
+		Ruiheng Qiu 
+		Xin Tao 
+		Zhi Tang 
+		
+	Datasets:
+		d1
+		d2
+		
 4520a900.xml
 	Hybrid Approach to Adaptive OCR for Historical Books
-	2012
-	Vladimir Kluzner, Asaf Tzadok, Dan Chevion, Eugene Walach
-	
+	2011
+	Authors:
+		Vladimir Kluzner 
+		Asaf Tzadok 
+		Dan Chevion 
+		Eugene Walach 
+		
+	Datasets:
+		
 p99-hurst-doceng09.xml
 	Review of Automatic Document Formatting
-	2012
-	Nathan Hurst
-	Wilmot Li
-	Kim Marriott
-	
+	2009
+	Authors:
+		Nathan Hurst 
+		Wilmot Li 
+		Kim Marriott 
+		
+	Datasets:
+		
 4520a936.xml
 	Character enhancement for historical newspapers printed usinghot metal typesetting
-	2012
-	Iuliu Konya
-	Stefan Eickeler
-	Christoph Seibert
-	
+	2011
+	Authors:
+		Iuliu Konya 
+		Stefan Eickeler 
+		Christoph Seibert 
+		
+	Datasets:
+		historical newspaper excerpts
+		
 p213-de12-glyph.xml
 	Glyph Spotting for Mediaeval Handwritingsby Template Matching
 	2012
-	Jan-Hendrik Worch
-	Mathias Lawo
-	Björn Gottfried
-	
+	Authors:
+		Jan-Hendrik Worch 
+		Mathias Lawo 
+		Björn Gottfried 
+		
+	Datasets:
+		
 4520a151.xml
 	A Novel Method for Embedded Text Segmentation Based on Stroke and Color
-	2012
-	Xiufei Wang
-	, Lei Huang
-	, and Changping Liu
-	
+	2011
+	Authors:
+		Xiufei Wang 
+		Lei Huang 
+		Changping Liu 
+		
+	Datasets:
+		
 4520a063.xml
 	Browsing Heterogeneous Document Collections by a Segmentation-free WordSpotting Method
-	2012
-	Marc¸al Rusi˜nol, David Aldavert, Ricardo Toledo and Josep Llad´os
-	
+	2011
+	Authors:
+		Marc¸al Rusi˜nol 
+		David Aldavert 
+		Ricardo Toledo 
+		Josep Llad´os 
+		
+	Datasets:
+		george washington
+		lord byron
+		persian
+		
 p143-de11-layout-giannetti.xml
 	Paginate Dynamic and Web Content 
-	2012
-	Fabio Giannetti 
-	
+	2011
+	Authors:
+		Fabio Giannetti 
+		
+	Datasets:
+		
 4520a136.xml
 	Robust Vanishing Point Detection for MobileCam-Based Documents
-	2012
-	Xu-Cheng Yin, Hong-Wei Hao 
-	Jun Sun, Satoshi Naoi 
-	
+	2011
+	Authors:
+		Xu-Cheng Yin 
+		Hong-Wei Hao 
+		Jun Sun 
+		Satoshi Naoi 
+		
+	Datasets:
+		
 4520a844.xml
 	Writer Identiﬁcation using TF-IDF for Cursive Handwritten Word Recognition
-	2012
-	Quang Anh BUI, Muriel VISANI, Sophea PRUM and Jean-Marc OGIER
-	
+	2011
+	Authors:
+		Quang Anh BUI 
+		Muriel VISANI 
+		Sophea PRUM 
+		Jean-Marc OGIER 
+		
+	Datasets:
+		
 p57-de11-sojka-mathretr.xml
 	The Art of Mathematics Retrieval
-	2012
-	Petr Sojka
-	Martin Líška
-	
+	2011
+	Authors:
+		Petr Sojka 
+		Martin Líška 
+		
+	Datasets:
+		
 4520b230.xml
 	Document recto-verso registration using a dynamic time warping algorithm.
-	2012
-	Rabeux Vincent
-	Journet Nicholas
-	Domenger Jean Philippe
-	
+	2011
+	Authors:
+		Rabeux Vincent 
+		Journet Nicholas 
+		Domenger Jean Philippe 
+		
+	Datasets:
+		
 pap0260-brandl-pres.xml
 	NiCEBook – Supporting Natural Note Taking 
-	2012
-	Peter Brandl, Christoph Richter, Michael Haller 
-	
+	2010
+	Authors:
+		Peter Brandl 
+		Christoph Richter 
+		Michael Haller 
+		
+	Datasets:
+		
 4520a794.xml
 	Text Segmentation of Consumer Magazines in PDF Format 
-	2012
-	Jian Fan 
-	
+	2011
+	Authors:
+		Jian Fan 
+		
+	Datasets:
+		
