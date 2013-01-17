@@ -14,11 +14,11 @@ def getall(filename):
 	abstractmark=1000				
 	depthsearchds=2						#how many line to expand searching for
 										#dataset in a file
+	#fo = open('dsstrings','a')
 	for i, line in enumerate(f):		#read a line from file
 		#find title		
 		if ("font=\"0\"" in line and i<30):	#check if its the title line
-			titlepart = findtitle(line)
-			article[1] += titlepart
+			article[1] += findtitle(line)
 			titlemark = i
 		#find year of article
 		if 'copyright' in line.lower():
@@ -30,17 +30,21 @@ def getall(filename):
 			if abstractmark==1000:
 				abstractmark=i
 		elif(abstractmark==1000 and titlemark!=0 and titlemark!=i):
+			#if the program passed the title mark but has not yet arrived
+			#at the abstract or introduction mark
 			#extract possible authors and adds the list to the existing one
 			posauthors = findauthors(line)
 			if posauthors != None:
-				article[3].extend(posauthors)
-		if ('dataset' in line.lower() or 'database' in line.lower()):
+				article[3].extend(posauthors) #possibilty there are more than
+												#one author
+		if ('dataset' in line.lower()):
 			#if we find dataset or database in text, we make an extensive
 			#search for the matching keywords that would tell us a name
 			#of the dataset that we are searching for
 			#IMPORTANT: here we pass i+1 as line number, as linecache mod
 			#start the index counting from 1 instead of 0 like enumerate
-			findds(filename.strip(), i+1, depthsearchds, article[4])
+			ltowrt = findds(filename.strip(), i+1, depthsearchds, article[4])
+			#fo.write(ltowrt+"\n\n")
 			#print filename
 	return article
 
@@ -49,6 +53,7 @@ def findds(filename, i, depthsearch, dss):
 	for d in datasets:
 		if (d in line.lower() and d not in dss):
 			dss.append(d)
+	return line
 
 def constructline(filename,i,dpt):
 	defline=''
@@ -101,20 +106,22 @@ def getexclude():
 	f = open('excludekeywords','r')
 	for line in f:
 		for keyword in line.split():
-			exclude.append(keyword)	
+			exclude.add(keyword)	
 
 def getdatasets():
 	global datasets
 	f = open('datasetkeywords','r')
 	for line in f:
-		datasets.append(line.strip())
+		datasets.add(line.strip())
 
 filelist = open('xmllist', 'r')
 fileoutput = open('xmltitles', 'w')
-exclude=[]
+exclude={''}
 getexclude()
-datasets=[]
+exclude.remove('')
+datasets={''}
 getdatasets()
+datasets.remove('')
 for currentpdf in filelist:
 	article=getall(currentpdf)
 	strtowrite = article[0]+"\n\t" + article[1]+"\n\t" + article[2]+"\n\t" + "Authors:" + "\n\t\t"

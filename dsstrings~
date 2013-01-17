@@ -1,0 +1,318 @@
+features in a bag-of-features framework to model a user’s  handwriting. This approach achieves a top 1 recognition rate  of 93% on the benchmark IAM English handwriting dataset,  which outperforms current state of the art features. Results  
+
+as the number of training samples increase, and additionally,  that the performance of the KAS features extend to Arabic  handwriting found in the MADCAT dataset.      
+
+present how a codebook is constructed to represent a  handwriting model as a vector of code words. Sections V and  VI describe the experimental datasets and results.  II.  R 
+
+  Author  Dataset Language  # of Writers  
+
+uniqueness of handwriting by showing that writer  verification can be performed at a rate of 96%, and writer  identification at a rate of 87%, for a dataset of over 1500  writers.  They identify macro features that include intensity  
+
+the character level. Micro features are shown to significantly  outperform the macro features. While the results are  impressive, the dataset set contains identical passages from  all writers and the approach required manual segmentation,  
+
+author uses the log likelihood output by the Viterbi algorithm  to rank users and achieves an identification rate of 94% on  50 writers from the IAM dataset. This work is extended in  [15] where Schlapbach uses a Gaussian Mixture Model and  
+
+method with the CO3 slant features, and run lengths to  achieve an identification accuracy of 89% on the IAM  dataset for 650 writers. This approach is the current state of  the art for writer identification.  
+
+Gabor wavelets for features and HMMs to classify Chinese  with moderate success. In [7] and [8] the authors use features  similar to those in [5] for Arabic datasets. [7] achieves a  recognition rate of 90% on a dataset of 40 writers and [8]  
+
+with moderate success. In [7] and [8] the authors use features  similar to those in [5] for Arabic datasets. [7] achieves a  recognition rate of 90% on a dataset of 40 writers and [8]  achieves an identification rate of 88% when using 5 training  
+
+recognition rate of 90% on a dataset of 40 writers and [8]  achieves an identification rate of 88% when using 5 training  samples on a dataset of 350 writers.  While there has been a steady increase in writer  
+
+Euclidean distance. Figure 3 shows example popular 3AS code words present in th dataset.  V.  D 
+
+  In our experiments described in the nex two datasets to show that the performan features is not dependent on a particular dat 
+
+features is not dependent on a particular dat to multiple languages.  A.  IAM Handwriting Dataset  The IAM dataset is made up of sample 
+
+to multiple languages.  A.  IAM Handwriting Dataset  The IAM dataset is made up of sample English text from 650 different writers. This 
+
+English text from 650 different writers. This used by a number of other authors and can b primary benchmark dataset for writer identi samples are each scanned as 300 DPI graysc 
+
+taset and extends  es of handwritten  s dataset has been  be considered the  
+
+can be found in [10]. The images ar already binarized, and are signifi structured then the IAM dataset. F contributed to this dataset were dir 
+
+already binarized, and are signifi structured then the IAM dataset. F contributed to this dataset were dir speeds using various writing instru 
+
+XPERIMENTS A Four experiments are conduc MADCAT dataset to determine the  feature for writer identification.  
+
+    dataset.    
+
+    DCAT dataset.   
+
+rent writers.  set  E dataset is made up of  dwritten Arabic text from  
+
+E dataset is made up of  dwritten Arabic text from  d outlined of this dataset  re sampled at 600 dpi, are  
+
+line segments  , 3AS, and 4AS for  M dataset to determine  size resulted in the best  
+
+between lowercase and uppercase characters between the  writing samples. The top 10 score of 96-97% likely  represents an upper-bound for this dataset and is consistent  with other published results for this dataset.  
+
+writing samples. The top 10 score of 96-97% likely  represents an upper-bound for this dataset and is consistent  with other published results for this dataset.  B.  Improvement from Additional Training Samples  
+
+with other published results for this dataset.  B.  Improvement from Additional Training Samples  A second experiment was performed on the IAM dataset  to determine if more than one training sample benefits the  
+
+100.0%  100.0% 99.8%  Table 3: Results on 127 writers from IAM dataset.    
+
+  samples were randomly chosen from 127 writers to create  the experimental dataset. Between 1 and 3 of the samples  were used for training and the remaining unused samples  
+
+nearest neighbor search were averaged for the multiple  “trained” samples. This process is repeated using only one  dataset for testing and one for training for comparison  purposes.  
+
+around 127 writers. These results may be skewed due to the  high precision when using just one training sample due to  the limited numbers of writers available in the IAM dataset.  For this reason, a further review of the relationship between  
+
+For this reason, a further review of the relationship between  the number of training samples and identification  performance is continued on the MADCAT dataset in the  third experiment.  
+
+Arabic MADCAT data containing 10 samples for 302  writers. A new codebook was trained from the unused  portion of the dataset. This experiment followed the same  procedure as experiment 2 in order to take advantage of the  
+
+95.8%  95.8%  Table 4: Results on the IAM dataset using the Arabic codebook.    
+
+D.  Universality of the codebook  The last experiment uses the Arabic codebook on the IAM  dataset. This was done in order to show that a codebook is  not unique to a language as shown in [12]. This also allows  
+
+dataset. This was done in order to show that a codebook is  not unique to a language as shown in [12]. This also allows  all 650 writers from the IAM dataset to be tested on for a  direct comparison to the state of the art results presented in  
+
+largely independent from language as there is only a 1%  drop in accuracy between the English and Arabic codebooks  for 350 writers on the IAM dataset. The addition of 300  more writers hardly impacts the accuracy showing that this  
+
+many features have to be combined and still do not reach the  same performance. The identification rate of 93% on the  IAM dataset and 90% on the MADCAT dataset outperforms  the current state of the art. The experiments show that the  
+
+COMPARATIVE RESULTS OVER THE  HIT- MW DATASET   
+
+our method is given to illustrate the predominance of ours. In  general, the proposed method outperforms the previously  reported ones over the HIT-MW dataset. Besides, unlike  other methods which need large number of training data to  
+
+Figure 9.   exapmles of  documents with more writing freedom.  Additionally, we also test our method on the English  handwritten document dataset to check its effectiveness on  western-character handwritten documents. Unfortunately the  
+
+western-character handwritten documents. Unfortunately the  detailed correct rate is not listed for there is no sufficient  ground truth at pixel level for these dataset. A few examples  are presented in Fig 10.  
+
+Recognition Performance Evaluation,” Pattern Recognition, vol. 4, no.  3, pp. 205-217, 2002.  [8]  Tonghua. Su, Tianwen. Zhang, Dejun. Guan, “HIT-MW Dataset for  Offline Chinese Handwritten Text Recognition”, Proc. 10 
+
+provide robust retrieval method. However the linear time search complexity is practically unacceptable for searching large datasets. The hashing based approximate nearest search performs retrieval in sub-linear time complexity with trade- 
+
+from document image is done by horizontal and vertical proﬁle based technique. After initial ﬁltering, Devanagari word dataset contains 14888 words, Bengali word dataset consists 11231 words. The ﬁltering process removes stop 
+
+[16] C. Faloutsos and K. I. Lin, “Fastmap: a fast algorithm for indexing, data-mining and visualization of traditional and multimedia datasets,” Proceedings of the ACM International Conference on Management of Data 
+
+types. We focus on scientific papers, since they are one of the  most important media in digital libraries and contain many tables  (1.28 tables per paper in our dataset), which are all genuine,  unlike Web tables [2]. The preliminary experimental results show  
+
+Expectation-Maximization (EM) to iteratively split the error segments to obtain correct text-lines. We show improvement in accuracies using our correction method on datasets of Arabic document images. Results on a set of artiﬁcially generated 
+
+E VALUATION Our dataset consists of a set of 125 Arabic document images with 1974 handwritten text-lines. We generated a 
+
+Our dataset consists of a set of 125 Arabic document images with 1974 handwritten text-lines. We generated a set of proximity datasets using these images to test the robustness of our approach. We moved each line closer to 
+
+robustness of our approach. We moved each line closer to the line above it, in steps of some ﬁxed fraction of average distance between the lines, to generate a series of datasets. We call this the  
+
+the line above it, in steps of some ﬁxed fraction of average distance between the lines, to generate a series of datasets. We call this the  19740 text-lines. 
+
+(lp-1 to lp-25). As shown, our method is robust to these two parameters. We also evaluated our method on ICDAR 2009 segmentation competition dataset (200 images) [12] and F-Measures( 
+
+proposed method was developed for Arabic, it adapts well to other scripts like English, French, German and Greek used in the dataset. The average time taken for the processing of a single image is 2.2 seconds for the proximity data and 3.2 
+
+method is fast due to the removal of small components in the ﬁrst step. We demonstrated the effectiveness of our method on different datasets. We also showed the improvement in accuracies on a previous method [1] which did not use any 
+
+[10] T. H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein. Introduction to Algorithms [11] DATASET: Handwritten 
+
+Textline Segmentation and Proximity Datasets, Language and Media Process- ing Laboratory, Univeristy of Maryland College park, 
+
+is proposed to split rooms into several sub-regions if several semantic rooms share the same physical room. Our fully- automatic system is evaluated on a publicly available dataset of architectural ﬂoor plans. In our experiments, we could 
+
+is marked as single room, whereas Figure 2 shows the case where the ground truth is divided into several rooms. After splitting rooms into several sub-regions, the next step is to merge those regions which do not have any room 
+
+Figure 2: Room Spliting: Room part from original ﬂoor plan image(a) Room detection and labeling (b) Room Spliting using labeling results(c) (a) (b) 
+
+makes the categorization task more eﬃcient [15]. We in- vestigate in the next section a statistical learning strategy based on a labeled dataset to classify the vectors x. 118 
+
+EXPERIMENT RESULTS 4.1 Dataset and settings We work on a dataset of about 1000 pairs of Web pages 
+
+4.1 Dataset and settings We work on a dataset of about 1000 pairs of Web pages manually annotated “similar” or “dissimilar” provided by 
+
+evaluate our model. We compare our results to the random classiﬁer which automatically predicts the most represented class in the dataset, yielding a baseline accuracy of 72.8%. Evaluation of visual features. 
+
+nique for ofﬂine writer identiﬁcation. This paper considers whether the de facto standards for initial grapheme extraction are optimal for both modern and historical datasets. We examine the construction and representation of the graphemes that comprise 
+
+construction and representation of the graphemes that comprise the codebook, testing three segmentation methods and two graph- eme size normalisation methods on two datasets: a 93-writer IAM dataset, and a 43-writer medieval English dataset. The standard 
+
+the codebook, testing three segmentation methods and two graph- eme size normalisation methods on two datasets: a 93-writer IAM dataset, and a 43-writer medieval English dataset. The standard minima-split segmentation is compared to a complementary 
+
+image segmentation which takes into account the writing Figure 1. Sample image from the medieval scribes dataset structure. The typical segmentation method used assumes a 
+
+size normalisation for grapheme similarity matching. The identiﬁcation accuracy of the codebook method with these modiﬁcations is tested on both a clean benchmark dataset (IAM) and a noisy historical dataset. This allows us to compare 
+
+identiﬁcation accuracy of the codebook method with these modiﬁcations is tested on both a clean benchmark dataset (IAM) and a noisy historical dataset. This allows us to compare whether realistic data responds to these modiﬁcations in the 
+
+(IAM) and a noisy historical dataset. This allows us to compare whether realistic data responds to these modiﬁcations in the same way as a benchmark dataset. Two grapheme size normalisation methods are tested: 
+
+minima-split approach by preserving ligatures, and compare them against each other and the combination of both. The following section describes the datasets used, the gen- eral grapheme codebook process, and the particular imple- 
+
+codebooks of around 100 - 400. Codebook graphemes were selected randomly from the total pool of graphemes generated for a dataset for the given normalisation/segmentation method combination. Grapheme 
+
+(plotted in Figures 3, 5, 7 and 8). Figure 2. Sample IAM dataset text lines from [21] To see how the proposed methods respond to varying 
+
+To see how the proposed methods respond to varying sample size and noise levels, all experiments are run on two datasets (total 384 runs). The ﬁrst is an IAM dataset of the 93 writers made available from the 100-writer identiﬁcation 
+
+1 . The second is a historical dataset containing approximately 400 full- and part-page images from Middle-English manu- 
+
+images attributed to each scribe; identiﬁcation of each image was provided by University of York Professor of Medieval English Palaeography, Linne Mooney. The dataset is very ir- regular, and image noise levels are high. The ink trace is often 
+
+and font. The images also vary in size and resolution, from archival quality to samples from a handheld digital camera. In contrast to the IAM set, the medieval dataset is representative of the problems encountered in analysing real-world historical 
+
+contrast to the IAM set, the medieval dataset is representative of the problems encountered in analysing real-world historical datasets, and required a greater level of processing. Selection and binarisation of the text areas was carried out manually on 
+
+Codebook Size Accuracy (%) Normalisation method classification accuracy on the IAM dataset   
+
+square−ratio normalisation Figure 3. Normalisation results on the IAM dataset ment and its results in some detail, before concluding. 
+
+In this experiment, the standard minima segmentation was used to generate two sets of graphemes for each of the scribes and IAM datasets, one aspect-scaled and the other square-scaled. As described in Section II, reference codebooks 
+
+Codebook Size Accuracy (%) Normalisation method classification accuracy on the scribes dataset   
+
+square−ratio normalisation Figure 5. Normalisation results on the medieval dataset graphemes generated from the relevant dataset/normalisation 
+
+Figure 5. Normalisation results on the medieval dataset graphemes generated from the relevant dataset/normalisation combination only. The feature vector generation and classiﬁc- 
+
+Results: Figures 3 and 5 show the variation in Top-1 classiﬁcation accuracy on each dataset, with error bars of +/- 1 standard error (plotted with some horizontal jitter for 
+
+classiﬁcation accuracy on each dataset, with error bars of +/- 1 standard error (plotted with some horizontal jitter for clarity). The normalisation experiments on the IAM dataset clearly show that aspect-ratio preservation performs better 
+
+across all codebook sizes, and conﬁrms that aspect-ratio in freehand Latin scripts carries writer-speciﬁc information. On the medieval scribes dataset, the results are more incon- clusive, but suggest that the square normalisation may offer a 
+
+clusive, but suggest that the square normalisation may offer a small (1–2 percentage-point) boost, i.e. aspect-ratio does not carry writer-speciﬁc information in this dataset. The reason for this may be that aspect-ratio in character formation is font- 
+
+a largely ﬁxed aspect-ratio. This implies that aspect is likely to be more strongly correlated with font than with writer in the scribes dataset, as it is limited to scripts produced during the medieval period in England. 
+
+the medieval period in England. The difference in baseline classiﬁcation accuracy between the datasets is due to the differences in sample size: the scribes dataset images contain up to a page of text (an average of 
+
+The difference in baseline classiﬁcation accuracy between the datasets is due to the differences in sample size: the scribes dataset images contain up to a page of text (an average of approximately 1000 graphemes), whereas the IAM dataset 
+
+the datasets is due to the differences in sample size: the scribes dataset images contain up to a page of text (an average of approximately 1000 graphemes), whereas the IAM dataset consists of text-line samples of around 35 graphemes. 
+
+Following these results, aspect-ratio normalisation was chosen for the segmentation experiments, as it gives the best overall performance across datasets. IV. S 
+
+connected-components themselves. As these segmentation techniques are complementary, their combination is also tested. To do this, each image in the dataset is represented by the union of the bags of graphemes output 
+
+Codebook Size Accuracy (%) Segmentation method classification accuracy on the IAM dataset   
+
+combined (minima + ligature) Figure 7. Segmentation results on the IAM dataset 0 
+
+Codebook Size Accuracy (%) Segmentation method classification accuracy on the scribes dataset   
+
+combined (minima + ligature) Figure 8. Segmentation results on the medieval dataset greater than either method individually. 
+
+Results: As before, Figures 7 and 8 show the Top-1 classiﬁcation accuracy on each dataset, with error bars of +/- 1 standard error (plotted with some horizontal jitter for clarity). 
+
+preserving character ligatures do provide substantial writer- speciﬁc information, but the minima segmentation method performs signiﬁcantly better on both datasets. Again, this result is much less clear on the scribes dataset due to noise 
+
+speciﬁc information, but the minima segmentation method performs signiﬁcantly better on both datasets. Again, this result is much less clear on the scribes dataset due to noise effects. 
+
+result is much less clear on the scribes dataset due to noise effects. On the IAM dataset, combining the output of both methods gives a signiﬁcant performance boost, suggesting that the 
+
+points over the ligature method. This reﬂects a substantial proportional accuracy increase of 12% and 25% respectively. On the scribes dataset, the minima-split method signiﬁc- antly increases accuracy by 3–4 percentage-points, or 5–7% 
+
+than a focus on the between-character ligatures. However in contrast to the IAM dataset, the combined method does not perform signiﬁcantly differently to the best single-strategy 
+
+This work has examined bitmap normalisation and segment- ation methods for grapheme codebooks on two very different datasets. Preserving the aspect-ratio of freehand text was found to signiﬁcantly improve classiﬁcation accuracy by 7– 
+
+not necessarily hold true of historical data: there is at best no increase in performance from aspect-ratio preservation. In grapheme segmentation for both datasets, preserving solely the character body provides signiﬁcantly more writer- 
+
+solely the character body provides signiﬁcantly more writer- speciﬁc information than preserving solely the between- character ligatures. This effect is greatest on the IAM dataset, with a performance difference of approximately 10%, com- 
+
+data. Combining multiple splitting methods produces a signi- ﬁcant boost in accuracy on the small, clean IAM samples, but the high image noise levels typical of historical datasets may offset any practical gain. 
+
+Overall, the standard minima segmentation and aspect-ratio normalisation methods appear to perform well on clean bench- mark datasets, but an improvement in identiﬁcation accuracy can be made for small image samples by combining multiple 
+
+impact, and combining segmentation methods offers no im- provement. We conclude that extraction methods appropriate for modern freehand benchmark datasets may not be optimal when applied directly to the increasing numbers of historical 
+
+for modern freehand benchmark datasets may not be optimal when applied directly to the increasing numbers of historical datasets in this area. Future work will include examining the effects of varying 
+
+is performed using multiple GPUs. 1 Our dataset consists of examples from the ICDAR 2003 train- ing images [10], the English subset of the Chars74k dataset [4], and 
+
+1 Our dataset consists of examples from the ICDAR 2003 train- ing images [10], the English subset of the Chars74k dataset [4], and synthetically generated examples. 
+
+end text recognition performance of our system on the ICDAR 2003 [10] and the Street View Text (SVT) [18] datasets. Apart from that, we also perform additional analysis to evaluate the importance of model size on dif- 
+
+ferent stages of the pipeline. First we evaluate our character recognizer module on the ICDAR 2003 dataset. Our 62-way character 
+
+Our word recognition sub-system is evaluated on im- ages of perfectly cropped words from the ICDAR 2003 and SVT datasets. We use the exact same test setup as [18]. More concretely, we measure word-level accu- 
+
+sisting of the ground truth words for that image plus 50 random “distractor” words added from the test set (called I-WD-50). For the SVT dataset, we used the provided lexicons to evaluate the accuracy (called SVT- 
+
+very recent work of [11]. We evaluate our ﬁnal end-to-end system on both the ICDAR 2003 and SVT datasets, where we locate and recognize words in full scene images given a lexicon. 
+
+ICDAR 2003 and SVT datasets, where we locate and recognize words in full scene images given a lexicon. For the SVT dataset, we use the provided lexicons; for the ICDAR 2003 dataset, we used lexicons of 5, 20 and 
+
+recognize words in full scene images given a lexicon. For the SVT dataset, we use the provided lexicons; for the ICDAR 2003 dataset, we used lexicons of 5, 20 and 50 distractor words provided by the authors of [18], as 
+
+to compute the precision and recall. Figure 4 shows pre- cision and recall plots for the different benchmarks on the ICDAR 2003 dataset. As a standard way of summarizing results, we also 
+
+Precision Figure 4. End-to-end PR curves on ICDAR 2003 dataset using lexicons with 5, 20, and 50 distractor words. 
+
+P , Using this simple setup, we achieve scores of 0.54/0.30/0.38 (precision/recall/F-score) on the ICDAR dataset. This 5 
+
+a corpus of English proper names to better handle text in scenes. Table 2. F-scores from end-to-end evalua- tion on ICDAR 2003 and SVT datasets. Benchmark 
+
+.6723 ules, we construct a 2-way (character vs. non-character) classiﬁcation dataset by cropping patches from the IC- DAR test images. The recognition modules are eval- 
+
+and graph based representations, concerning the topology and their comparison with other skeletons, which are suitable for fast pro- cessing of vast datasets of characters. In this paper, we present a method to efﬁciently compare skeleton topologies and make this 
+
+without ruling lines. Furthermore, we detect page columns in  order to assist table region delimitation in complex layout  pages. Evaluations of our algorithm on an e-Book dataset and  a scientific document dataset show competitive performance. It  
+
+order to assist table region delimitation in complex layout  pages. Evaluations of our algorithm on an e-Book dataset and  a scientific document dataset show competitive performance. It  is noteworthy that the proposed method has been successfully  
+
+  RESULTS  We test our algorithm on two datasets. The first dataset  (D1) includes 70 PDF e-Books provided by Founder  
+
+two million e-Book library and manually examined to ensure  each of them contains tables with various layouts. The  second dataset (D2) is scientific documents provided by Liu,  which is used in her previous work [6, 11]. We manually  
+
+necessary attribute of tables. In real-world documents,  captions may be absent or labeled with keywords different  from their predefined list. Besides, in the e-Book dataset, we  also get a higher precision, because sparse tables with a few  
+
+prints exhibiting artifacts with a stroke width even higher than that of most thin characters stems. We evaluate our approach on a dataset consisting of old newspaper excerpts printed using Fraktur fonts. The recognition results on the enhanced images 
+
+a short overview of related approaches for document and character enhancement. The proposed approach is evaluated on a dataset consisting of old German-language newspaper excerpts via the OCR results obtained from two well-known 
+
+assess the robustness of the proposed method. As can be seen in ﬁgure 3, the proposed technique can readily handle Affected dataset Unaffected dataset 
+
+seen in ﬁgure 3, the proposed technique can readily handle Affected dataset Unaffected dataset Method 
+
+of letterpress printing artifacts produced as a direct result of problems in the hot metal typesetting. The approach was tested on a dataset consisting of historical newspaper excerpts printed using a Gothic (Fraktur) font and totaling 
+
+ﬀectiveness of our method, we grab 1200 text blocks including 11789 characters from images and video frames. The characters in the dataset involve Chinese, English, and digits. All the experiments are done on the 
+
+* Figure 5. Parameters estimation results on the test dataset: μ and σ are 
+
+R ESULTS A. Datasets and Performance Evaluation To perform the experiments, we worked with three 
+
+A. Datasets and Performance Evaluation To perform the experiments, we worked with three datasets of different nature. On the one hand the George Washington (GW) dataset described in [1]. This dataset 
+
+To perform the experiments, we worked with three datasets of different nature. On the one hand the George Washington (GW) dataset described in [1]. This dataset consists of 20 handwritten pages with a total of 4860 words. 
+
+Washington (GW) dataset described in [1]. This dataset consists of 20 handwritten pages with a total of 4860 words. On the other hand, the Lord Byron (LB) dataset consists on 20 typewritten pages from a 1825 book 
+
+4988 words. The ground-truth for both collections contains the word transcriptions and their bounding-boxes. Finally, the Persian (PE) dataset consists of 20 typewritten pages from a 1848 book written in Persian. Unfortunately, we do 
+
+the Persian (PE) dataset consists of 20 typewritten pages from a 1848 book written in Persian. Unfortunately, we do not have any ground-truth for this dataset, and will only be used as a proof-of-concept that the method is able to work 
+
+f) Figure 1. Qualitative results. Query and top ten retrieved words. a) and b) GW dataset. c) and d) LB dataset. e) and f) PE dataset. B. Results 
+
+B. Results We present in Figure 1 some qualitative results of the method in the three different datasets for a couple of queries. Note that the proposed method is able to work with queries 
+
+are still visually similar to the queries. Concerning the quantitative evaluation, we used all the words in GW and LB datasets as queries. For the GW dataset the mean average precision was 30.42% and the 
+
+Concerning the quantitative evaluation, we used all the words in GW and LB datasets as queries. For the GW dataset the mean average precision was 30.42% and the mean recall was 71.1% whereas for the LB dataset the 
+
+words in GW and LB datasets as queries. For the GW dataset the mean average precision was 30.42% and the mean recall was 71.1% whereas for the LB dataset the mean average precision was 42.83% and the mean recall 
+
+stop-words) the system performance presents an important increase. For example, considering words larger than 5 characters, for the GW dataset the mean average precision is increased until reaching a 53.76% and the mean recall results 
+
+characters, for the GW dataset the mean average precision is increased until reaching a 53.76% and the mean recall results in a 93.39% whereas for the LB dataset the mean average precision results in a 70.23% and the mean recall is increased 
+
+Figure 2. Precision and recall curves for different word lengths. a) GW dataset. b) LB dataset. 1 
+
+Figure 3. Quantitative results for different word lengths. a) and b) mean average precision and mean recall for GW dataset respectively. c) and d) mean average precision and mean recall for LB dataset respectively. 
+
+Quantitative results for different word lengths. a) and b) mean average precision and mean recall for GW dataset respectively. c) and d) mean average precision and mean recall for LB dataset respectively. appear. As future research lines we would like to combine 
+
+sequential correction style. The accuracy results are  described in Fig. 2.   In our dataset, there are even some street signs and non- document images. The fraction of these non-document  
+
+method introduced in [20]. Then, the graphemes x are characterized by using the features in [20]. In order to reduce variability of the clustering input dataset as well as the weight matrices computation time, graphemes are pre- 
+
+and y for the vertical shift . Image registration methods aim at bringing two or more dataset in the same coordinate system [1]. Most of these methods are not suitable for the registration of a recto-verso 
+
